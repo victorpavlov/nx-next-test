@@ -29,7 +29,7 @@ export const getStaticProps: GetStaticProps<ArticleProps> = async ({
 
 export const getStaticPaths: GetStaticPaths<ArticleProps> = async () => {
   return {
-    paths: [1, 2, 3].map((idx) => {
+    paths: [1, 2, 3, 4].map((idx) => {
       return {
         params: {
           slug: `page${idx}`,
