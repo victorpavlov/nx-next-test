@@ -1,4 +1,4 @@
-import fs from 'fs';
+import * as fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import { MarkdownDocument } from './types';
