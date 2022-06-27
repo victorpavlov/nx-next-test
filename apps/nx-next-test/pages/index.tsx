@@ -37,9 +37,7 @@ export function Index() {
         </div>
       </div>
       <div className="container mx-auto">
-        <article className="prose mx-auto lg:prose-xl">
-          Some text here
-        </article>
+        <article className="prose mx-auto lg:prose-xl">Some text here</article>
       </div>
     </div>
   );
