@@ -4,6 +4,7 @@
   "projects": {
     "markdown": "libs/markdown",
     "nx-next-test": "apps/nx-next-test",
-    "nx-next-test-e2e": "apps/nx-next-test-e2e"
+    "nx-next-test-e2e": "apps/nx-next-test-e2e",
+    "shared-mdx-elements": "libs/shared/mdx-elements"
   }
 }

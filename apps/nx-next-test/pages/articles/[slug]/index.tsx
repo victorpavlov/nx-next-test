@@ -7,7 +7,8 @@ import {
   MarkdownRenderingResult,
   renderMarkdown,
 } from '@nx-test/markdown';
-// import styles from './articles.module.css';
+import { MDXRemote } from 'next-mdx-remote';
+import { mdxElements } from '@nx-test/shared/mdx-elements';
 
 /* eslint-disable-next-line */
 export interface ArticleProps extends ParsedUrlQuery {
@@ -26,7 +27,7 @@ export function Article({ frontMatter, html }) {
         <div>by {frontMatter.author.name}</div>
         <hr />
 
-        <main dangerouslySetInnerHTML={{ __html: html }} />
+        <MDXRemote {...html} components={mdxElements} />
       </article>
     </div>
   );
@@ -59,8 +60,6 @@ export const getStaticPaths: GetStaticPaths<ArticleProps> = async () => {
     .map((path) => path.replace(/\.mdx?$/, ''))
     // Map the path into the static paths object required by Next.js
     .map((slug) => ({ params: { slug } }));
-
-  console.log(paths);
 
   return {
     paths,
