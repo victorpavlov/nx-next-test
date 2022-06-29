@@ -28,6 +28,7 @@
   "devDependencies": {
     "@nrwl/cli": "14.3.6",
     "@nrwl/cypress": "14.3.6",
+    "@nrwl/devkit": "14.3.6",
     "@nrwl/eslint-plugin-nx": "14.3.6",
     "@nrwl/jest": "14.3.6",
     "@nrwl/linter": "14.3.6",
