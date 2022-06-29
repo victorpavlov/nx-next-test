@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@nx-test/markdown": ["libs/markdown/src/index.ts"],
-      "@nx-test/shared/mdx-elements": ["libs/shared/mdx-elements/src/index.ts"]
+      "@nx-test/shared/mdx-elements": ["libs/shared/mdx-elements/src/index.ts"],
+      "@nx-test/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
