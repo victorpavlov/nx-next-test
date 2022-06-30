@@ -33,6 +33,7 @@ export function TopicButton(props: TopicButtonProps) {
     <button
       className="bg-white pl-4 rounded-lg shadow flex max-w-md min-w-max hover:shadow-md transition-shadow"
       onClick={onClickHandler}
+      data-testid="topicButton"
     >
       <img src={icon} alt="" className="w-12" />
       <div className="p-5">

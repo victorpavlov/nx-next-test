@@ -1,7 +1,17 @@
 describe('shared-ui: TopicButton component', () => {
-  beforeEach(() => cy.visit('/iframe.html?id=topicbutton--primary'));
+  it('should render the topic name', () => {
+    cy.visit('/iframe.html?id=topicbutton--primary&args=topicName:Next.js;');
+    cy.get('[data-testid=topicButton]').should('contain', 'Next.js');
 
-  it('should render the component', () => {
-    cy.get('h1').should('contain', 'Welcome to TopicButton!');
+    cy.visit('/iframe.html?id=topicbutton--primary&args=topicName:React;');
+    cy.get('[data-testid=topicButton]').should('contain', 'React');
+  });
+
+  it('clicking the icon should properly pass the name of the topic to the event handler', () => {
+    cy.visit('/iframe.html?id=topicbutton--primary&args=topicName:Next.js;');
+
+    cy.get('[data-testid=topicButton]').click();
+
+    cy.get('[data-testid=click-result]').should('contain', 'Next.js');
   });
 });
