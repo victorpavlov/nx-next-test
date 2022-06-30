@@ -1,6 +1,5 @@
 import { TopicButton } from '@nx-test/shared/ui';
 
-
 /* eslint-disable-next-line */
 export interface TopicsProps {}
 

@@ -19,11 +19,7 @@ const Template: Story<TopicButtonProps> = (args) => {
         {...args}
         onClick={(topicName) => setClickedTopic(topicName)}
       />
-      {clickedTopic && (
-        <div>
-          Button has been clicked: {clickedTopic}
-        </div>
-      )}
+      {clickedTopic && <div>Button has been clicked: {clickedTopic}</div>}
     </div>
   );
 };
