@@ -7,6 +7,12 @@
     "nx-next-test-e2e": "apps/nx-next-test-e2e",
     "shared-mdx-elements": "libs/shared/mdx-elements",
     "shared-ui": "libs/shared/ui",
-    "storybook-e2e-ui-e2e": "apps/storybook-e2e/ui-e2e"
+    "storybook-e2e-ui-e2e": "apps/storybook-e2e/ui-e2e",
+    "site-articles": {
+      "root": "_articles",
+      "sourceRoot": "_articles",
+      "projectType": "application",
+      "targets": {}
+    }
   }
 }

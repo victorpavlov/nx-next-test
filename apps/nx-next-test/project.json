@@ -56,5 +56,6 @@
       }
     }
   },
+  "implicitDependencies": ["site-articles"],
   "tags": []
 }
